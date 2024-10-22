@@ -82,3 +82,9 @@ No resources.
 | <a name="output_terraform_state_bucket_name"></a> [terraform\_state\_bucket\_name](#output\_terraform\_state\_bucket\_name) | The name of the S3 bucket for storing Terraform state |
 | <a name="output_vpc_flow_logs_bucket_name"></a> [vpc\_flow\_logs\_bucket\_name](#output\_vpc\_flow\_logs\_bucket\_name) | The name of the S3 bucket for storing VPC flow logs |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
+
+
+## Review links
+- [Review](https://github.com/fivexl/terraform-aws-naming-convetions/compare/main@%7B7day%7D...main)
+- [Review branch-based review](https://github.com/fivexl/terraform-aws-naming-convetions/compare/review...main)

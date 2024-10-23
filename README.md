@@ -2,6 +2,7 @@
 This module is designed to serve as the definitive source for naming conventions within an organization. If you need to create an entity that will be utilized across multiple accounts, you should employ this module to ensure consistency in naming conventions.
 
 # Usage: 
+
 ```hcl
 module "naming_conventions" {
   source = "fivexl/naming-conventions/aws"
@@ -25,6 +26,7 @@ locals {
   chat_bot_topic_arn_ssm_parameter_name = module.naming_conventions.chat_bot_topic_arn_ssm_parameter_name
   chat_bot_topic_arn_resource_share_name = module.naming_conventions.chat_bot_topic_arn_resource_share_name
 }
+
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

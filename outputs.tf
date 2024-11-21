@@ -2,12 +2,12 @@
 
 output "org_info_ssm_parametes_names" {
   value = {
-    org_arn              = "/shared/management/org-arn"
-    root_id              = "/shared/management/root-id"
-    org_id               = "/shared/management/org-id"
-    master_account_id    = "/shared/management/master-account-id"
-    accounts             = "/shared/management/accounts"
-    ous                  = "/shared/management/ous"
+    org_arn                 = "/shared/management/org-arn"
+    root_id                 = "/shared/management/root-id"
+    org_id                  = "/shared/management/org-id"
+    master_account_id       = "/shared/management/master-account-id"
+    accounts                = "/shared/management/accounts"
+    ous                     = "/shared/management/ous"
     accounts_by_environment = "/shared/management/accounts-by-environment"
   }
   description = "This is a map of the SSM parameter names for the 'org_info' shared ssm parameter."
@@ -15,12 +15,12 @@ output "org_info_ssm_parametes_names" {
 
 output "org_info_ram_resource_share_names" {
   value = {
-    org_arn              = "ssm-shared-management-org-arn"
-    root_id              = "ssm-shared-management-root-id"
-    org_id               = "ssm-shared-management-org-id"
-    master_account_id    = "ssm-shared-management-master-account-id"
-    accounts             = "ssm-shared-management-accounts"
-    ous                  = "ssm-shared-management-ous"
+    org_arn                 = "ssm-shared-management-org-arn"
+    root_id                 = "ssm-shared-management-root-id"
+    org_id                  = "ssm-shared-management-org-id"
+    master_account_id       = "ssm-shared-management-master-account-id"
+    accounts                = "ssm-shared-management-accounts"
+    ous                     = "ssm-shared-management-ous"
     accounts_by_environment = "ssm-shared-management-accounts-by-environment"
   }
   description = "This is a map of the RAM resource share names for the 'org_info' shared ssm parameter."

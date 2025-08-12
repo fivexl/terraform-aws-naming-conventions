@@ -31,7 +31,7 @@ locals {
 This module can also generate names for your resources. For instance, you can generate random, hashed names for S3 buckets:
 ```hcl
 module "s3_names" {
-  source = "fivexl/naming-conventions/aws/modules/naming_generator"
+  source = "fivexl/naming-conventions/aws"
   version = "0.0.3"
 
   for_each = {

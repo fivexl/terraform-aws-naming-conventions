@@ -42,7 +42,7 @@ module "s3_names" {
     athena_query_results_bucket_name   = "athena-query-results"
   }
 
-  name          = each.value
+  names          = each.value
   resource_type = "s3"
 }
 ``` 

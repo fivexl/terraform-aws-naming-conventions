@@ -26,8 +26,26 @@ locals {
   chat_bot_topic_arn_ssm_parameter_name = module.naming_conventions.chat_bot_topic_arn_ssm_parameter_name
   chat_bot_topic_arn_resource_share_name = module.naming_conventions.chat_bot_topic_arn_resource_share_name
 }
-
 ```
+### Generating Resource Names
+This module can also generate names for your resources. For instance, you can generate random, hashed names for S3 buckets:
+```hcl
+module "s3_names" {
+  source = "fivexl/naming-conventions/aws/modules/naming_generator"
+  version = "0.0.3"
+
+  for_each = {
+    terraform_state_bucket_name        = "terraform-state"
+    terraform_lock_dynamodb_table_name = "terraform-state-lock"
+    s3_access_logs_bucket_name         = "access-logs"
+    vpc_flow_logs_bucket_name          = "vpc-flow-logs"
+    athena_query_results_bucket_name   = "athena-query-results"
+  }
+
+  name          = each.value
+  resource_type = "s3"
+}
+``` 
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements

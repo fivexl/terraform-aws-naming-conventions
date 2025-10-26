@@ -78,7 +78,7 @@ No resources.
 | <a name="input_hash_algorithm"></a> [hash\_algorithm](#input\_hash\_algorithm) | The hash algorithm that would be used to encode account\_id and region. This is uselful to avoid leaking account\_id and region in the resource name (for example in public S3 bucket names).  Possible values are 'sha1' \| null. Defaults to 'sha1' | `string` | `"sha1"` | no |
 | <a name="input_max_length"></a> [max\_length](#input\_max\_length) | The maximum length of the resource name. Defaults to 255 | `number` | `null` | no |
 | <a name="input_names"></a> [names](#input\_names) | The names of the resources to generate | `list(string)` | `[]` | no |
-| <a name="input_order"></a> [order](#input\_order) | The order of the name components | `list(string)` | <pre>[<br>  "name",<br>  "region",<br>  "env_id"<br>]</pre> | no |
+| <a name="input_order"></a> [order](#input\_order) | The order of the name components | `list(string)` | <pre>[<br/>  "name",<br/>  "region",<br/>  "env_id"<br/>]</pre> | no |
 | <a name="input_resource_type"></a> [resource\_type](#input\_resource\_type) | The type of resource to generate a name for. Possible values are 's3' \| 'dynamodb'. | `string` | `"none"` | no |
 | <a name="input_with_env_id"></a> [with\_env\_id](#input\_with\_env\_id) | Whether to include the environment id in the name | `bool` | `true` | no |
 | <a name="input_with_region"></a> [with\_region](#input\_with\_region) | Whether to include the region in the name | `bool` | `false` | no |
@@ -92,8 +92,10 @@ No resources.
 | <a name="output_chat_bot_topic_arn_ssm_parameter_name"></a> [chat\_bot\_topic\_arn\_ssm\_parameter\_name](#output\_chat\_bot\_topic\_arn\_ssm\_parameter\_name) | Name of the SSM parameter for the Chatbot topic ARN |
 | <a name="output_default_kms_key_resource_share_name"></a> [default\_kms\_key\_resource\_share\_name](#output\_default\_kms\_key\_resource\_share\_name) | Name of the RAM resource share for the default KMS key |
 | <a name="output_names"></a> [names](#output\_names) | The generated names for the resources |
-| <a name="output_org_info_ram_resource_share_name"></a> [org\_info\_ram\_resource\_share\_name](#output\_org\_info\_ram\_resource\_share\_name) | Name of the RAM resource share for the organization information ssm parameter |
-| <a name="output_org_info_ssm_parameter_name"></a> [org\_info\_ssm\_parameter\_name](#output\_org\_info\_ssm\_parameter\_name) | Name of the ssm parameter with the organization information |
+| <a name="output_org_info_ram_resource_share_name"></a> [org\_info\_ram\_resource\_share\_name](#output\_org\_info\_ram\_resource\_share\_name) | Deprecated, will be removed in the next major release. Name of the RAM resource share for the organization information ssm parameter |
+| <a name="output_org_info_ram_resource_share_names"></a> [org\_info\_ram\_resource\_share\_names](#output\_org\_info\_ram\_resource\_share\_names) | This is a map of the RAM resource share names for the 'org\_info' shared ssm parameter. |
+| <a name="output_org_info_ssm_parameter_name"></a> [org\_info\_ssm\_parameter\_name](#output\_org\_info\_ssm\_parameter\_name) | Deprecated, will be removed in the next major release. Name of the ssm parameter with the organization information |
+| <a name="output_org_info_ssm_parametes_names"></a> [org\_info\_ssm\_parametes\_names](#output\_org\_info\_ssm\_parametes\_names) | This is a map of the SSM parameter names for the 'org\_info' shared ssm parameter. |
 | <a name="output_s3_access_logs_bucket_name"></a> [s3\_access\_logs\_bucket\_name](#output\_s3\_access\_logs\_bucket\_name) | The name of the S3 bucket for storing access logs |
 | <a name="output_s3_access_logs_replication_configuration_resource_share_name"></a> [s3\_access\_logs\_replication\_configuration\_resource\_share\_name](#output\_s3\_access\_logs\_replication\_configuration\_resource\_share\_name) | Name of the RAM resource share for the S3 access logs replication configuration |
 | <a name="output_s3_access_logs_replication_configuration_ssm_parameter_name"></a> [s3\_access\_logs\_replication\_configuration\_ssm\_parameter\_name](#output\_s3\_access\_logs\_replication\_configuration\_ssm\_parameter\_name) | Name of the SSM parameter for the S3 access logs replication configuration |
